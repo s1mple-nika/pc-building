@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Building Simulator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .component {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: white;
+        }
+        button {
+            padding: 10px;
+            background-color: #28a745;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <h1>PC Building Simulator</h1>
+    <div class="component">
+        <h2>CPU</h2>
+        <p>Select your CPU:</p>
+        <button onclick="selectComponent('CPU')">Select CPU</button>
+    </div>
+    <div class="component">
+        <h2>GPU</h2>
+        <p>Select your GPU:</p>
+        <button onclick="selectComponent('GPU')">Select GPU</button>
+    </div>
+    <div class="component">
+        <h2>RAM</h2>
+        <p>Select your RAM:</p>
+        <button onclick="selectComponent('RAM')">Select RAM</button>
+    </div>
+    <script>
+        function selectComponent(component) {
+            alert("You have selected a " + component + "!");
+        }
+    </script>
+</body>
+</html>
